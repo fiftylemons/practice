@@ -27,7 +27,7 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [14.161, 39.48], // EDIT coordinates to re-center map
+    center: [14.161, 40.48], // EDIT coordinates to re-center map
     zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
@@ -41,8 +41,16 @@ OpenStreetMap</a> contributors, &copy;\
 }).addTo(map);
 	  	  
   /* Display a point marker with pop-up text */
-  L.marker([14.161, 39.48]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+  L.marker([14.161, 40.48]).addTo(map) // EDIT marker coordinates
+  .bindPopup("marker posizione partenza"); // EDIT pop-up text message
+	  
+	  
+  L.marker([14.161, 40.58]).addTo(map) // EDIT marker coordinates
+  .bindPopup("secondo marker"); // EDIT pop-up text message
+	  
+	  
+  L.marker([14.161, 40.68]).addTo(map) // EDIT marker coordinates
+  .bindPopup("terzo marker"); // EDIT pop-up text message
 
   </script>
 </body>
