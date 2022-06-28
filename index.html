@@ -19,7 +19,7 @@
 <body>
 
   <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">mappa di prova</div>
+  <div id="map-title">Dek and Dega Estifanos islands. Lake Tana, Ethiopia</div>
   <div id="map"></div>
 
   <!-- Create the interactive map content with JavaScript (.js) -->
@@ -27,7 +27,7 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [14.161, 40.48], // EDIT coordinates to re-center map
+    center: [11.916762, 37.271729], // EDIT coordinates to re-center map
     zoom: 6,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
@@ -55,16 +55,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 	  	  
   /* Display a point marker with pop-up text */
-  L.marker([14.161, 40.48]).addTo(map) // EDIT marker coordinates
-  .bindPopup("marker posizione partenza"); // EDIT pop-up text message
-	  
-	  
-  L.marker([14.161, 40.58]).addTo(map) // EDIT marker coordinates
+  	  
+  L.marker([11.916762, 37.271729]).addTo(map) // EDIT marker coordinates
   .bindPopup("secondo marker"); // EDIT pop-up text message
-	  
-	  
-  L.marker([14.161, 40.68]).addTo(map) // EDIT marker coordinates
-  .bindPopup("terzo marker"); // EDIT pop-up text message
 
   </script>
 </body>
